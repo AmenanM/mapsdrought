@@ -27,7 +27,7 @@ def read_csv(path):
     return pd.read_csv(path)
      
 #Data prepartion to only retrieve fields that are relevent to this project
-dre=read_csv(r"C:\Users\Amenan\OneDrive - Quant Decisions S.L\ESG\drought_spain_table.csv")
+dre=read_csv("drought_spain_table.csv")
 dre['1.5°C']=pd.to_numeric(dre['1.5°C'].astype(str).str.replace(',',''))
 dre['2.0°C']=pd.to_numeric(dre['2.0°C'].astype(str).str.replace(',',''))
 dre['3.0°C']=pd.to_numeric(dre['3.0°C'].astype(str).str.replace(',',''))
