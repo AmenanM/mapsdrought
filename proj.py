@@ -18,7 +18,7 @@ def read_csv(path):
     return pd.read_csv(path)
      
 #Data prepartion to only retrieve fields that are relevent to this project
-spain_data2=read_csv(r"C:\Users\Amenan\OneDrive - Quant Decisions S.L\ESG\dr2.csv")
+spain_data2=read_csv("dr2.csv")
 
 time_index = list(spain_data2['year'].sort_values().astype('str').unique())
 import folium
