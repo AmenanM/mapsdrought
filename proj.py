@@ -60,7 +60,7 @@ colormap.add_to(m)
 import streamlit as st
 def app():
     st.title('projection')
-    st.write("Visualize historial series and projected drought indexex as well as projected annual cost for Spain.We have 5 classes, namely: 1- Non-Drought (in this class the value of SPEI greater than -0.5), 2- Mild (the value of SPEI is between -0.5 and -1), 3- Moderate (SPEI is between -1.5 and -1), 4- Severe (SPEI is between -2 and -1.5), and 5- Extreme (Less than -2).")
+    st.write("Visualize historial series and projected values of the SPEI drought indexes for Spain.We have 5 classes, namely: 1- Non-Drought (in this class the value of SPEI greater than -0.5), 2- Mild (the value of SPEI is between -0.5 and -1), 3- Moderate (SPEI is between -1.5 and -1), 4- Severe (SPEI is between -2 and -1.5), and 5- Extreme (Less than -2).")
     st.write(spain_data2)  
     folium_static(m)
 
