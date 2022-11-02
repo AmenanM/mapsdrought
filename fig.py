@@ -69,6 +69,6 @@ fig.update_layout(
 )
 
 def app():
-    st.title('historical')
-    st.write("Visualize econ impact")
+    st.title('Projected economic impact')
+    st.write("Economic loss in different scenarios from a global wearming level of 1.5°C or 2°C in Spain")
     st.plotly_chart(fig)
